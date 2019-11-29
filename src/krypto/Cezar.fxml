@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="657.0" prefWidth="941.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="krypto.CezarController">
+   <children>
+      <TextArea fx:id="text" layoutX="371.0" layoutY="56.0" prefHeight="200.0" prefWidth="277.0" />
+      <TextArea fx:id="wynik" layoutX="371.0" layoutY="429.0" prefHeight="200.0" prefWidth="277.0" />
+      <Button fx:id="szyfruj" layoutX="371.0" layoutY="358.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="80.0" text="szyfruj" />
+      <TextField fx:id="klucz" layoutX="372.0" layoutY="299.0" prefHeight="31.0" prefWidth="277.0" />
+      <Label layoutX="273.0" layoutY="304.0" text="Klucz" />
+      <Label fx:id="info" layoutX="423.0" layoutY="24.0" text="Label" textFill="RED" visible="false">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="deszyfruj" layoutX="569.0" layoutY="358.0" mnemonicParsing="false" text="deszyfruj" />
+      <Label layoutX="273.0" layoutY="156.0" text="Tekst jawny" />
+      <Label layoutX="275.0" layoutY="490.0" text="Szyfr" />
+      <RadioButton fx:id="cezar" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" selected="true" text="Cezar">
+         <toggleGroup>
+            <ToggleGroup fx:id="szyfr" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="playfair" layoutX="94.0" layoutY="15.0" mnemonicParsing="false" text="Playfair" toggleGroup="$szyfr" />
+      <RadioButton fx:id="plotkowy" layoutX="195.0" layoutY="15.0" mnemonicParsing="false" text="Płotkowy" toggleGroup="$szyfr" />
+   </children>
+</AnchorPane>
